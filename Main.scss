@@ -1,0 +1,128 @@
+$color_1: #fff;
+$color_2: #000000;
+$background_color_1: #2e444d;
+$background_color_2: #2a8dac;
+$background_color_3: #6f98a8;
+$background_color_4: #bebebe;
+$background_color_5: #efefef;
+
+.card {
+  display: inline-block;
+  line-height: 30vh;
+  text-align: center;
+  color: $color_1;
+  height: 32vh;
+  &:nth-child(3) {
+    background-color: $background_color_1;
+  }
+  &:nth-child(5) {
+    background-color: $background_color_1;
+  }
+  &:nth-child(9) {
+    background-color: $background_color_1;
+  }
+  &:nth-child(2) {
+    background-color: $background_color_2;
+  }
+  &:nth-child(4) {
+    background-color: $background_color_2;
+  }
+  &:nth-child(1) {
+    background-color: $background_color_3;
+  }
+  &:nth-child(8) {
+    background-color: $background_color_3;
+  }
+  &:nth-child(6) {
+    background-color: $background_color_4;
+  }
+  &:nth-child(7) {
+    background-color: $background_color_4;
+  }
+}
+.btn-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  float: right;
+  justify-content: center;
+  button {
+    width: 70%;
+    margin-bottom: 10px;
+    background: #70b0dc;
+    color: $color_1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 4px 6px #e4dada;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  width: 33.3%;
+  position: relative;
+  font-size: 5vw;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    line-height: 9vh;
+    background-color: $background_color_5 !important;
+    color: $color_2;
+    height: 10vh;
+    &:nth-child(3) {
+      border-left: 5px solid #2e444d;
+    }
+    &:nth-child(5) {
+      border-left: 5px solid #2e444d;
+    }
+    &:nth-child(9) {
+      border-left: 5px solid #2e444d;
+    }
+    &:nth-child(2) {
+      border-left: 5px solid #2a8dac;
+    }
+    &:nth-child(4) {
+      border-left: 5px solid #2a8dac;
+    }
+    &:nth-child(1) {
+      border-left: 5px solid #6f98a8;
+    }
+    &:nth-child(8) {
+      border-left: 5px solid #6f98a8;
+    }
+    &:nth-child(6) {
+      border-left: 5px solid #bebebe;
+    }
+    &:nth-child(7) {
+      border-left: 5px solid #bebebe;
+    }
+  }
+  .container {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 3%;
+    font-size: 8vw;
+  }
+  .item {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 3%;
+    font-size: 8vw;
+  }
+  .btn-right {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    button {
+      width: 32%;
+      margin-left: 10px;
+    }
+  }
+}
